@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Controlesbasicos</string>
+
+
+    <string-array name="sa_lenguajes">
+        <item>Java</item>
+        <item>PHP</item>
+        <item>Ruby</item>
+        <item>JavaScript</item>
+        <item>C</item>
+        <item>C++</item>
+        <item>C#</item>
+
+    </string-array>
+
+</resources>
