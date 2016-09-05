@@ -144,27 +144,32 @@ public class MainActivity extends AppCompatActivity {
                     }
                     break;
                 case R.id.id_plus:
-
-                    res = (Float.parseFloat(tmp) + Float.parseFloat(buffer));
+                    if (op==R.id.id_plus) {
+                        res = (Float.parseFloat(tmp) + Float.parseFloat(buffer));
+                    }
                     op = R.id.id_plus;
                     tmp = buffer;
                     buffer = "";
                     calc_txt.setText(buffer);
-                    Toast.makeText(MainActivity.this, "Suma " + Double.toString(res), Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(MainActivity.this, "Suma " + Double.toString(res), Toast.LENGTH_SHORT).show();
                     break;
                 case R.id.id_less:
-                    op=R.id.id_less;
+                    if (op==R.id.id_less) {
+                        op = R.id.id_less;
+                    }
                     res= (Float.parseFloat(tmp) - Float.parseFloat(buffer));
                     buffer="";
                     calc_txt.setText(buffer);
-                    Toast.makeText(MainActivity.this, "Minuuus " + Double.toString(res), Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(MainActivity.this, "Minuuus " + Double.toString(res), Toast.LENGTH_SHORT).show();
                     break;
                 case R.id.id_mul:
-                    op=R.id.id_mul;
+                    if (op==R.id.id_mul) {
+                        op = R.id.id_mul;
+                    }
                     res= (Float.parseFloat(tmp) * Float.parseFloat(buffer));
                     buffer="";
                     calc_txt.setText(buffer);
-                    Toast.makeText(MainActivity.this, "multiplication" + Double.toString(res), Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(MainActivity.this, "multiplication" + Double.toString(res), Toast.LENGTH_SHORT).show();
                     break;
                 case R.id.id_div:
                     op=R.id.id_div;
